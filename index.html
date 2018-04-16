@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>MailVision</title>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>MailVision - File Upload Page</h1>
+    <p></p>
+</div>
+
+<div class="container">
+    <div class="jumbotron">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#fileUpload">File Upload</a></li>
+            <li><a data-toggle="tab" href="#manualUpload">Manual Upload</a></li>
+            <li><a data-toggle="tab" href="#overview">Overview</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="fileUpload" class="tab-pane fade in active">
+                <h3>Upload a file (or choose a file you have already uploaded)</h3>
+                <br/>
+
+                <a href="https://www.dropbox.com/s/m8euv8n692zhapk/lead_template.xlsx?dl=0" target="_blank">
+                    View Template</a>
+
+                <br/>
+                <br/>
+                <input id="input-b2" name="input-b2" type="file" class="file" data-show-preview="false">
+
+                <br/>
+                <button style="margin-bottom: 10px" class="btn btn-default" id="upload-button">Upload file</button>
+
+            </div>
+
+            <div id="manualUpload" class="tab-pane fade">
+                <h3>Manual Upload</h3>
+
+                <br/>
+                <form class="form-horizontal" action="">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="firstName">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="firstName" class="form-control" id="firstName" placeholder="Enter First Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="surname">Surname:</label>
+                        <div class="col-sm-10">
+                            <input type="surname" class="form-control" id="surname" placeholder="Enter Surname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Create new list
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="control-label col-sm-2">Add to existing list
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <select>
+                            <option value="nolist">No list selected</option>
+                            <option value="Denmark04052017">Denmark 04/05/2017</option>
+                            <option value="Finland07112018">Finland 07/11/2018</option>
+                            <option value="Norway23022016">Norway 23/02/2016</option>
+                            <option value="Denmark13012017">Denmark 13/01/2017</option>
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="overview" class="tab-pane fade">
+                <h3>Overview</h3>
+                <ul>
+                    <li><a href="https://www.dropbox.com/s/eb1xcoatddfmtd4/All-lists.xlsx?dl=0" target="_blank">
+                        All Lists</a></li>
+                    <br/>
+                    <li><a href="https://www.dropbox.com/s/n5ia60sxb9t7c4i/Denmark-04052017.xlsx?dl=0" target="_blank">
+                        Denmark 04/05/2017</a></li>
+                    <br/>
+                    <li><a href="https://www.dropbox.com/s/215pyww67w2qtvm/Finland-07112018.xlsx?dl=0" target="_blank">
+                        Finland 07/11/2018</a></li>
+                    <br/>
+                    <li><a href="https://www.dropbox.com/s/rcpidci7swxuu3s/Norway-23022016.xlsx?dl=0" target="_blank">
+                        Norway 23/02/2016</a></li>
+                    <br/>
+                    <li><a href="https://www.dropbox.com/s/2xkfk9rj0smqnas/Denmark-13012017.xlsx?dl=0" target="_blank">
+                        Denmark 13/01/2017</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">2018 © All rights reserved</p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
